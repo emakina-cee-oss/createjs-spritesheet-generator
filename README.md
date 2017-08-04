@@ -1,5 +1,5 @@
 # createjs-spritesheet-generator
-Create a Spritesheet from a folder of images via [`spritesmith`](https://github.com/Ensighten/spritesmith)
+Create a Spritesheet from a folder of images via [spritesmith](https://github.com/Ensighten/spritesmith)
 
 This project requires nodejs >= 8.1 incl. npm 5 to be installed.
 
@@ -27,7 +27,7 @@ cjsSpritesheetGenerator(options);
 - outImgName: `String` Name of ss that will be generated without extension, default: `'spritesheet'`
 - verbose: `Boolean` En|disable logs to console, default: false
 - padding: `Number` Space between sprites in `px` - doubled for retina version, default: `2`
-- pngquantOptions: `Object` Will be passed to [`imageminpngquant`](https://github.com/imagemin/imagemin-pngquant)
+- pngquantOptions: `Object` Will be passed to [imageminpngquant](https://github.com/imagemin/imagemin-pngquant)
     - quality: `String` Imagequality, range between `0..100`, default: `'30-75'`
     - floyd: `Number` Controls level of dithering, between `0..1`, default: `1`
     - speed: `Number` Speed between `0..10` - 10 is fastest with decreased quality, default: `3`
