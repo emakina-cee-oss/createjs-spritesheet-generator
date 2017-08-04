@@ -1,0 +1,17 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#webstorm
+.idea/
+
+#sublime
+*.sublime-project
+*.sublime-workspace
+
+#Visual Studio Code
+.vscode/
+
+# NPM
+node_modules
+npm-debug.*

@@ -1,0 +1,8 @@
+{
+    "name": "{{spritesheet.name}}",
+    "ssData": {
+        "frames": [{{#each sprites}}[{{x}},{{y}},{{width}},{{height}}]{{#unless @last}},{{/unless}}{{/each}}]
+        "images": ["{{spritesheet.escaped_image}}"]
+    }
+    "frameNames": [{{#each sprites}}"{{name}}"{{#unless @last}},{{/unless}}{{/each}}],
+}
