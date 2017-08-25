@@ -1,6 +1,6 @@
 {
     "name": "{{spritesheet.name}}",
     "frames": [{{#each sprites}}[{{x}},{{y}},{{width}},{{height}}]{{#unless @last}},{{/unless}}{{/each}}],
-    "images": ["{{spritesheet.escaped_image}}"],
+    "images": ["{{options.imgName}}"],
     "frameNames": [{{#each sprites}}"{{name}}"{{#unless @last}},{{/unless}}{{/each}}]
 }

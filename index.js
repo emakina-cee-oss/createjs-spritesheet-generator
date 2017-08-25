@@ -43,11 +43,12 @@ gulp.task('sprites', () => {
     const imageMinOptions = [
         $.imageminPngquant(pngquantOptions)
     ];
-
+    const imgNameRetina = `${cfg.outImgName}${cfg.retina}.${cfg.outImgExt}`;
     const spriteSmithConfig2x = {
-        imgName: `${cfg.outImgName}${cfg.retina}.${cfg.outImgExt}`,
+        imgName: imgNameRetina,
         cssName: `${cfg.outImgName}${cfg.retina}.${cfg.outDataExt}`,
         cssTemplate: cfg.cssTemplate,
+        cssOpts: {imgName: imgNameRetina},
         padding: cfg.padding * 2
     };
 
