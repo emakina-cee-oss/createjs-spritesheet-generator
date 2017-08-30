@@ -21,7 +21,8 @@ const DEFAULT_CFG = {
     outDataExt: 'json', // 'js' || 'json'
 
     outImgExt: 'png',
-    cssTemplate: ''
+    cssTemplate: '',
+    name: 'spritesheet',
 };
 
 let cfg = {};
@@ -48,7 +49,7 @@ gulp.task('sprites', () => {
         imgName: imgNameRetina,
         cssName: `${cfg.outImgName}${cfg.retina}.${cfg.outDataExt}`,
         cssTemplate: cfg.cssTemplate,
-        cssOpts: {imgName: imgNameRetina},
+        cssOpts: {imgName: imgNameRetina, name: cfg.name},
         padding: cfg.padding * 2
     };
 
