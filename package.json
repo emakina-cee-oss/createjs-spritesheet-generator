@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@git.emakina.at:dd/createjs-spritesheet-generator.git"
+    "url": "git@github.com:emakina-cee-oss/createjs-spritesheet-generator.git"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +28,7 @@
     "vinyl-buffer": "^1.0.0"
   },
   "engines": {
-    "node": ">= 8.1.0"
+    "node": ">= 6.11.3"
   },
   "devDependencies": {
     "eslint": "^4.3.0",
