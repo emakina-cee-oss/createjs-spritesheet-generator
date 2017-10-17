@@ -13,7 +13,6 @@
     "type": "git",
     "url": "git@github.com:emakina-cee-oss/createjs-spritesheet-generator.git"
   },
-  "private": true,
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.3.0",
