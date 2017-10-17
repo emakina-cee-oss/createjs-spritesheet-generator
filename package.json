@@ -1,6 +1,6 @@
 {
-  "name": "riag-createjs-spritesheet-generator",
-  "version": "0.0.2",
+  "name": "createjs-spritesheet-generator",
+  "version": "0.0.3",
   "description": "create a createjs-spritesheet from a folder of images",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "eslint --env node \"index.js\""
   },
   "author": "Florian Bacher <f.bacher@emakina.at>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@git.emakina.at:dd/createjs-spritesheet-generator.git"
