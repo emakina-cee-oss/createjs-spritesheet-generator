@@ -1,0 +1,6 @@
+{
+    "name": "{{options.name}}",
+    "frames": [{{#each sprites}}[{{x}},{{y}},{{width}},{{height}}]{{#unless @last}},{{/unless}}{{/each}}],
+    "images": ["{{options.imgName}}"],
+    "frameNames": [{{#each sprites}}"{{name}}"{{#unless @last}},{{/unless}}{{/each}}]
+}

@@ -1,0 +1,34 @@
+(function (lib, img, cjs, ss) {
+
+var p; // shortcut to reference prototypes
+lib.ssMetadata = [{
+    name: "{{spritesheet.name}}",
+    frames: [{{#each sprites}}[{{x}},{{y}},{{width}},{{height}}]{{#unless @last}},{{/unless}}{{/each}}]
+}];
+
+// symbols
+{{#each sprites}}
+
+(lib.{{name}} = function() {
+	this.spriteSheet = ss["{{../spritesheet.name}}"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.AdaptiveSprite();
+
+
+{{/each}}
+
+// stage content:
+(lib.memorylib = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+    // I am empty and just provided for compatibility
+}).prototype = p = new cjs.MovieClip();
+
+// library properties:
+lib.properties = lib.properties || {};
+lib.properties.manifest = [
+		{src:"{{spritesheet.escaped_image}}", id:"{{spritesheet.name}}"}
+	]
+};
+
+})(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
+var lib, images, createjs, ss;

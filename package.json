@@ -1,0 +1,40 @@
+{
+  "name": "createjs-spritesheet-generator",
+  "version": "0.0.3",
+  "description": "create a createjs-spritesheet from a folder of images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --env node \"index.js\""
+  },
+  "author": "Florian Bacher <f.bacher@emakina.at>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@git.emakina.at:dd/createjs-spritesheet-generator.git"
+  },
+  "private": true,
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jimp": "^1.2.7",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.5.1",
+    "imagemin-pngquant": "^5.0.1",
+    "merge-stream": "^1.0.1",
+    "path": "^0.12.7",
+    "vinyl-buffer": "^1.0.0"
+  },
+  "engines": {
+    "node": ">= 8.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-emakinacee-base": "^1.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
